@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.dezhi.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#213cc2"
+
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+
+        android:text="Concordia meal rating"
+        android:id="@+id/textView"/>
+
+    <Spinner
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+
+        android:id="@+id/spinnerMeal"/>
+
+    <ImageView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:scaleType="fitCenter"
+
+        app:srcCompat="@drawable/poutine"
+        android:id="@+id/imageView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:text="Rate: "
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:textStyle="bold"
+            android:textSize="30dp"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+
+            android:id="@+id/textView2"/>
+
+        <RatingBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:layout_gravity="center_vertical"
+
+            android:numStars="3"
+            android:stepSize="0.5"
+
+            android:layout_marginLeft="25dp"
+
+            android:id="@+id/ratingBar"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Add"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+
+            android:id="@+id/btnAdd"/>
+
+        <Button
+            android:text="Show All"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+
+            android:id="@+id/btnShowAll"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Meal"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+
+            android:id="@+id/btnMeal"/>
+
+        <Button
+            android:text="Salad"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+
+            android:id="@+id/btnSalad"/>
+
+    </LinearLayout>
+</LinearLayout>
